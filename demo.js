@@ -1,20 +1,23 @@
 /*jshint browser:true*/
 var D = require('dual');
-var Widget = require('./');
+var Icon = require('./');
 
 var demo = D.fromJSON([
-    'widg', {
-        'ui:asset': 'one',
-        caption: 'Hello world!'
-    }
+    'div', [
+        ['icon', {
+            glyph: 'save'
+        }],
+        ['icon', {
+            glyph: 'open'
+        }],
+        ['icon', {
+            glyph: 'move'
+        }]
+    ]
 ], {
-    'widg': Widget
+    'icon': Icon
 });
 
-var assets = D.utils.indexBy(demo, false, 'ui:asset');
-
-setTimeout(function () {
-    assets.one.setCaption('It works!');
-}, 1000);
+// var assets = D.utils.indexBy(demo, false, 'ui:asset');
 
 document.body.appendChild(demo.domify());
