@@ -1,7 +1,7 @@
 {
   "name": "dcl-glyphicon",
   "description": "DCL glyphicon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/dualjs/dcl-glyphicon",
   "author": {
     "name": "Mark",
@@ -23,7 +23,6 @@
   "main": "lib/dcl-glyphicon.js",
   "dependencies": {
     "dual": "*",
-    "dcl-widget": "*",
     "dcl-bootstrap": "*"
   },
   "devDependencies": {
