@@ -23,7 +23,8 @@
   "main": "lib/dcl-glyphicon.js",
   "dependencies": {
     "dual": "*",
-    "dcl-bootstrap": "*"
+    "dcl-bootstrap": "*",
+    "dcl-bootstrap-attributes": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
